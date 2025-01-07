@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepdefinations",
-        tags = "@add_to_cart"
+        tags = "@HomePage"
 )
 
 public class test_runner extends AbstractTestNGCucumberTests { }

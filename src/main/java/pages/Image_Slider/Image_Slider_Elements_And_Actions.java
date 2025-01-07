@@ -91,10 +91,13 @@ public class Image_Slider_Elements_And_Actions {
         {
             WebElement Element = Wait_Utils.wait_until_condition(driver, check -> {
                 WebElement element;
-                try {
+                try
+                {
                     element = check.findElement(By.id(expected_img_id));
                     return element.isDisplayed() && element.getAttribute("data-clone").equals("false") ? element : null;
-                } catch (Exception e) {
+                }
+                catch (Exception e)
+                {
                     return null;
                 }
             });

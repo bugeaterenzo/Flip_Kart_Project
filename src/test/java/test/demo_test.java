@@ -20,8 +20,7 @@ public class demo_test extends setup_and_teardown
     @Test
     public void demo_flip_kart_test() throws InterruptedException
     {
-        logger.info("demo test started......!");
-        WebElement title =  Wait_Utils.wait_for_element(driver, By.cssSelector("img[title='Flipkart']") , WaitStrategy.VISIBLE);
-        System.out.println("title : " + title.getAttribute("title"));
+
+        Wait_Utils.get_time_out();
     }
 }

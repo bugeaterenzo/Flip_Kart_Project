@@ -18,6 +18,8 @@ public class Wait_Utils
     public static Duration get_time_out()
     {
         String timeout = Config_Manager.get_property("timeout" , "10");
+        if (timeout.equals("")) System.out.println("empty string...");
+        else System.out.println(timeout);
         return Duration.ofSeconds(Integer.parseInt(timeout));
     }
 
